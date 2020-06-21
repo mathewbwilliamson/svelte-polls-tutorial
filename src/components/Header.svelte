@@ -3,7 +3,9 @@
 </script>
 
 <style>
-
+  header {
+    background: #f7f7f7;
+  }
 </style>
 
 <header>

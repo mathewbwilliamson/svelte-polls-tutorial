@@ -1,5 +1,6 @@
 <script>
   import Header from "./components/Header.svelte";
+  import Footer from "./components/Footer.svelte";
 </script>
 
 <style>
@@ -30,3 +31,4 @@
     of the bright void beyond the chain link.
   </p>
 </main>
+<Footer />
