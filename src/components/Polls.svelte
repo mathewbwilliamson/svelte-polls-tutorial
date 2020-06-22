@@ -21,6 +21,6 @@
 <div class="poll-list">
   <!-- $PollStore subscribes directly to data -->
   {#each $PollStore as poll (poll.id)}
-    <PollDetails {poll} on:vote />
+    <PollDetails {poll} />
   {/each}
 </div>
