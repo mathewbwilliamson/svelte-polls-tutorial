@@ -31,7 +31,7 @@
       errors.answerB = "";
     }
 
-    //add new poll
+    // add new poll
     if (valid) {
       let poll = { ...fields, votesA: 0, votesB: 0, id: Math.random() };
       dispatch("addPoll", poll);

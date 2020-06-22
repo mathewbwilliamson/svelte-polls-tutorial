@@ -1,6 +1,14 @@
 <script>
   import PollDetails from "./PollDetails.svelte";
-  export let polls = [];
+  import PollStore from "../stores/PollStore.js";
+
+  // const unsub = PollStore.subscribe(data => {
+  //   polls = data;
+  // });
+  // // Lifecycle Hooks!! onMount, onDestroy, others
+  // onDestroy(() => {
+  //   unsub();
+  // });
 </script>
 
 <style>
@@ -11,7 +19,8 @@
 </style>
 
 <div class="poll-list">
-  {#each polls as poll (poll.id)}
+  <!-- $PollStore subscribes directly to data -->
+  {#each $PollStore as poll (poll.id)}
     <PollDetails {poll} on:vote />
   {/each}
 </div>
